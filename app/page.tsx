@@ -1,12 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
+import Link from 'next/link';
 
 import { MdMail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import { FaCalendarDays } from "react-icons/fa6";
 
-import { IoSearchCircle } from "react-icons/io5";
-
-import face from "./assets/face.svg";
+import FaceSVG from "./face";
 
 export default function Home() {
 	return (
@@ -21,12 +20,7 @@ export default function Home() {
 				<link rel="preload" href="/sfpros/SourceSansPro-Black.woff" as="font" type="font/woff" crossOrigin="anonymous" />
 			</Head>
 			<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-				<div className="flex items-start w-full justify-center pb-8 pt-16">
-					<div className="search-container text-4xl p-4 flex items-center">
-						<input placeholder="Search..." className="search-input text-4xl" />
-						<IoSearchCircle className="text-sky-600" />
-					</div>
-				</div>
+
 				<main className="flex flex-col gap-8 row-start-2 items-center sm:items-start mr-11 ml-11 container mx-auto w-full">
 					<div className="flex items-start w-full justify-center pb-8">
 						<div className="grid grid-rows-2 grid-cols-2 grid-row items-center justify-center gap-12">
@@ -40,12 +34,14 @@ export default function Home() {
 							</div>
 							<div className="row-span-1 md:row-span-2 col-span-2 md:col-span-1 flex items-center justify-center md:justify-start">
 								<div className="w-24 sm:w-36 md:w-48 lg:w-72">
-									<Image src={face} alt="Face svg" priority />
+									<FaceSVG />
 								</div>
 							</div>
 							<div className="col-span-2 md:col-span-1 row-span-1">
 								<div className="flex justify-center items-center">
-									<button className="button-86"><span className="text-2xl">Mode a modeling</span></button>
+									<Link href="https://calendly.com/meet-him" passHref>
+										<button className="button-86"><span className="text-2xl flex"><FaCalendarDays className="mr-3" />Book a meeting</span></button>
+									</Link>
 								</div>
 							</div>
 						</div>
