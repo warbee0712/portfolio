@@ -27,7 +27,7 @@ export default function Home() {
 							<div className="col-span-2 md:col-span-1 row-span-1">
 								<div className="flex justify-center items-center">
 									<div className="p-4">
-										<h1 className="text-4xl font-black pb-4">Hi, I'm John</h1>
+										<h1 className="text-4xl font-black pb-4">Hi, I am John</h1>
 										<h1 className="text-xl">Senior Software Engineer at Lennar</h1>
 									</div>
 								</div>
