@@ -40,7 +40,7 @@ export default function Home() {
 							<div className="col-span-2 md:col-span-1 row-span-1">
 								<div className="flex justify-center items-center">
 									<Link href="https://calendly.com/meet-him" passHref>
-										<button className="button-86"><span className="text-2xl flex"><FaCalendarDays className="mr-3" />BOOK A MEETING</span></button>
+										<button className="button-86"><span className="text-lg flex"><FaCalendarDays className="mt-1 mr-3" />BOOK A MEETING</span></button>
 									</Link>
 								</div>
 							</div>
